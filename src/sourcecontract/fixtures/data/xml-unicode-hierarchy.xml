@@ -1,0 +1,13 @@
+<source complete="true" contract_version="1.0">
+  <document>Part Ω &amp; General
+Clause β says “safe &amp; sound”.</document>
+  <record stable_id="xml:part:omega" title="Part Ω" start="0" end="16" status="active">
+    <path><segment>XML Code</segment><segment>Part Ω</segment></path>
+  </record>
+  <record stable_id="xml:clause:beta" title="Clause β" start="17" end="46" status="active">
+    <path><segment>XML Code</segment><segment>Part Ω</segment><segment>Clause β</segment></path>
+    <relationships>
+      <relationship type="parent" target="xml:part:omega" detail="structural parent"/>
+    </relationships>
+  </record>
+</source>

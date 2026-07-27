@@ -1,0 +1,8 @@
+<source complete="true" contract_version="1.0">
+  <document>Start
+	retain  spacing
+End</document>
+  <record stable_id="xml:space:1" title="Spacing" start="6" end="23" status="active">
+    <path><segment>Formatting</segment><segment>Spacing</segment></path>
+  </record>
+</source>

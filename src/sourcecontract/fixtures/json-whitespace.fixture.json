@@ -1,0 +1,34 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-whitespace"
+  },
+  "description": "Leading spaces, a tab, and a trailing newline are meaningful source characters.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "  keep\tall spaces  \n",
+        "hierarchy_path": [
+          "Layout",
+          "Clause 1"
+        ],
+        "relationships": [],
+        "stable_id": "layout:1",
+        "status": "active",
+        "title": "Whitespace clause"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-whitespace",
+  "payload": "data/json-whitespace.json",
+  "tags": [
+    "exact-span",
+    "whitespace",
+    "newlines"
+  ],
+  "title": "Whitespace-sensitive exact span"
+}

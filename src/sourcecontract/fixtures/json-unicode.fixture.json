@@ -1,0 +1,34 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-unicode"
+  },
+  "description": "Preserves composed and decomposed accents, an emoji, and non-ASCII punctuation without normalization.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Café and Café are distinct. Signal: ⚓ — proceed.",
+        "hierarchy_path": [
+          "Notices",
+          "Unicode"
+        ],
+        "relationships": [],
+        "stable_id": "notice:unicode:1",
+        "status": "active",
+        "title": "Café signal"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-unicode",
+  "payload": "data/json-unicode.json",
+  "tags": [
+    "exact-span",
+    "unicode",
+    "normalization"
+  ],
+  "title": "Unicode and normalization-sensitive text"
+}

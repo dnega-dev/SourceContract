@@ -1,0 +1,40 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-tombstone"
+  },
+  "description": "A zero-length XML span preserves a deleted record identity.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "exact_text": "",
+        "hierarchy_path": [
+          "XML Code",
+          "Deleted",
+          "Rule X"
+        ],
+        "relationships": [
+          {
+            "target": "xml:rule:x",
+            "type": "supersedes"
+          }
+        ],
+        "stable_id": "xml:rule:x:deleted",
+        "status": "tombstone",
+        "title": "Rule X deleted"
+      }
+    ]
+  },
+  "family": "xml",
+  "id": "xml-tombstone",
+  "payload": "data/xml-tombstone.xml",
+  "tags": [
+    "xml",
+    "tombstone",
+    "deletion"
+  ],
+  "title": "XML deletion tombstone"
+}

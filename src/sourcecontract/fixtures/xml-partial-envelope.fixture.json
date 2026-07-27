@@ -1,0 +1,20 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-partial-envelope"
+  },
+  "description": "An XML complete=false assertion is a hard rejection.",
+  "expect": {
+    "error": "PARTIAL_FETCH"
+  },
+  "family": "xml",
+  "id": "xml-partial-envelope",
+  "payload": "data/xml-partial-envelope.xml",
+  "tags": [
+    "xml",
+    "partial-fetch",
+    "truncation"
+  ],
+  "title": "XML envelope-declared truncation"
+}

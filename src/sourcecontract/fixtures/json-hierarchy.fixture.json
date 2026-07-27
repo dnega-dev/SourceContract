@@ -1,0 +1,53 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-hierarchy"
+  },
+  "description": "Two records require an ordered path and a parent edge whose path is a strict prefix.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": "2020-01-01",
+        "effective_to": null,
+        "exact_text": "Part I General Rules",
+        "hierarchy_path": [
+          "Code",
+          "Part I"
+        ],
+        "relationships": [],
+        "stable_id": "code:part-1",
+        "status": "active",
+        "title": "Part I"
+      },
+      {
+        "effective_from": "2020-01-01",
+        "effective_to": null,
+        "exact_text": "Section 1 Scope applies nationally.",
+        "hierarchy_path": [
+          "Code",
+          "Part I",
+          "Section 1"
+        ],
+        "relationships": [
+          {
+            "target": "code:part-1",
+            "type": "parent"
+          }
+        ],
+        "stable_id": "code:section-1",
+        "status": "active",
+        "title": "Scope"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-hierarchy",
+  "payload": "data/json-hierarchy.json",
+  "tags": [
+    "hierarchy",
+    "relationships",
+    "ordering"
+  ],
+  "title": "Parent-child hierarchy edges"
+}

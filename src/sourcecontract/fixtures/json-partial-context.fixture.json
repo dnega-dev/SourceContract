@@ -1,0 +1,19 @@
+{
+  "context": {
+    "complete": false,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-partial-context"
+  },
+  "description": "Transport metadata marks an otherwise valid envelope incomplete.",
+  "expect": {
+    "error": "PARTIAL_FETCH"
+  },
+  "family": "json",
+  "id": "json-partial-context",
+  "payload": "data/json-partial-context.json",
+  "tags": [
+    "partial-fetch",
+    "transport"
+  ],
+  "title": "Transport-declared partial fetch"
+}

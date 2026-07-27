@@ -1,0 +1,59 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-supersession"
+  },
+  "description": "A closed predecessor points to its active replacement and the replacement points back.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": "2020-01-01",
+        "effective_to": "2024-12-31",
+        "exact_text": "Old wording: submit monthly.",
+        "hierarchy_path": [
+          "Rules",
+          "Filing",
+          "Version 1"
+        ],
+        "relationships": [
+          {
+            "target": "filing:new",
+            "type": "superseded_by"
+          }
+        ],
+        "stable_id": "filing:old",
+        "status": "superseded",
+        "title": "Filing frequency"
+      },
+      {
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "exact_text": "New wording: submit quarterly.",
+        "hierarchy_path": [
+          "Rules",
+          "Filing",
+          "Version 2"
+        ],
+        "relationships": [
+          {
+            "target": "filing:old",
+            "type": "supersedes"
+          }
+        ],
+        "stable_id": "filing:new",
+        "status": "active",
+        "title": "Filing frequency"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-supersession",
+  "payload": "data/json-supersession.json",
+  "tags": [
+    "supersession",
+    "temporal",
+    "relationships"
+  ],
+  "title": "Explicit supersession chain"
+}

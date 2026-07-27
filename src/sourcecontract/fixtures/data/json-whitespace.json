@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "Header\n  keep\tall spaces  \nFooter",
+  "records": [
+    {
+      "effective_from": null,
+      "effective_to": null,
+      "exact_text": "  keep\tall spaces  \n",
+      "hierarchy_path": [
+        "Layout",
+        "Clause 1"
+      ],
+      "stable_id": "layout:1",
+      "text_end": 27,
+      "text_start": 7,
+      "title": "Whitespace clause"
+    }
+  ]
+}

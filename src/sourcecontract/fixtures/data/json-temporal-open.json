@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "This order takes effect at the stated instant.",
+  "records": [
+    {
+      "effective_from": "2025-02-01T09:00:00+05:30",
+      "effective_to": null,
+      "exact_text": "This order takes effect at the stated instant.",
+      "hierarchy_path": [
+        "Orders",
+        "2025",
+        "7"
+      ],
+      "stable_id": "order:2025:7",
+      "text_end": 46,
+      "text_start": 0,
+      "title": "Order 7"
+    }
+  ]
+}

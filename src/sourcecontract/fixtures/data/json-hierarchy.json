@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "Part I General Rules\nSection 1 Scope applies nationally.",
+  "records": [
+    {
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "exact_text": "Part I General Rules",
+      "hierarchy_path": [
+        "Code",
+        "Part I"
+      ],
+      "stable_id": "code:part-1",
+      "text_end": 20,
+      "text_start": 0,
+      "title": "Part I"
+    },
+    {
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "exact_text": "Section 1 Scope applies nationally.",
+      "hierarchy_path": [
+        "Code",
+        "Part I",
+        "Section 1"
+      ],
+      "relationships": [
+        {
+          "target": "code:part-1",
+          "type": "parent"
+        }
+      ],
+      "stable_id": "code:section-1",
+      "text_end": 56,
+      "text_start": 21,
+      "title": "Scope"
+    }
+  ]
+}

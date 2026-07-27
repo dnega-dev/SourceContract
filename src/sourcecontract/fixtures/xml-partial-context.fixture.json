@@ -1,0 +1,20 @@
+{
+  "context": {
+    "complete": false,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-partial-context"
+  },
+  "description": "Transport incompleteness overrides a well-formed complete-looking XML body.",
+  "expect": {
+    "error": "PARTIAL_FETCH"
+  },
+  "family": "xml",
+  "id": "xml-partial-context",
+  "payload": "data/xml-partial-context.xml",
+  "tags": [
+    "xml",
+    "partial-fetch",
+    "transport"
+  ],
+  "title": "XML transport-declared partial fetch"
+}

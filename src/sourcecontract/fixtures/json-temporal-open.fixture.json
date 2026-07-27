@@ -1,0 +1,35 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T07:30:00-05:00",
+    "source_url": "https://official.example.test/sources/json-temporal-open"
+  },
+  "description": "Tests null end dates, timezone-bearing effective values, and retrieval timestamp normalization.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": "2025-02-01T09:00:00+05:30",
+        "effective_to": null,
+        "exact_text": "This order takes effect at the stated instant.",
+        "hierarchy_path": [
+          "Orders",
+          "2025",
+          "7"
+        ],
+        "relationships": [],
+        "stable_id": "order:2025:7",
+        "status": "active",
+        "title": "Order 7"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-temporal-open",
+  "payload": "data/json-temporal-open.json",
+  "tags": [
+    "temporal",
+    "timezone",
+    "open-interval"
+  ],
+  "title": "Open and offset temporal bounds"
+}
