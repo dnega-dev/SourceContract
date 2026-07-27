@@ -1,0 +1,9 @@
+<source complete="true" contract_version="1.0">
+  <document>Schedule Entry north. Schedule Entry south.</document>
+  <record stable_id="xml:schedule:north" title="Schedule Entry" start="0" end="21" status="active">
+    <path><segment>Schedules</segment><segment>North</segment></path>
+  </record>
+  <record stable_id="xml:schedule:south" title="Schedule Entry" start="22" end="43" status="active">
+    <path><segment>Schedules</segment><segment>South</segment></path>
+  </record>
+</source>

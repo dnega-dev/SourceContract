@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "Old wording: submit monthly. New wording: submit quarterly.",
+  "records": [
+    {
+      "effective_from": "2020-01-01",
+      "effective_to": "2024-12-31",
+      "exact_text": "Old wording: submit monthly.",
+      "hierarchy_path": [
+        "Rules",
+        "Filing",
+        "Version 1"
+      ],
+      "relationships": [
+        {
+          "target": "filing:new",
+          "type": "superseded_by"
+        }
+      ],
+      "stable_id": "filing:old",
+      "status": "superseded",
+      "text_end": 28,
+      "text_start": 0,
+      "title": "Filing frequency"
+    },
+    {
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "exact_text": "New wording: submit quarterly.",
+      "hierarchy_path": [
+        "Rules",
+        "Filing",
+        "Version 2"
+      ],
+      "relationships": [
+        {
+          "target": "filing:old",
+          "type": "supersedes"
+        }
+      ],
+      "stable_id": "filing:new",
+      "text_end": 59,
+      "text_start": 29,
+      "title": "Filing frequency"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<source complete="true" contract_version="1.0">
+  <document>Former threshold: 10. Current threshold: 20.</document>
+  <record stable_id="xml:threshold:old" title="Threshold" start="0" end="21" status="superseded" effective_from="2021-01-01" effective_to="2024-12-31">
+    <path><segment>Thresholds</segment><segment>Former</segment></path>
+    <relationships>
+      <relationship type="superseded_by" target="xml:threshold:new"/>
+    </relationships>
+  </record>
+  <record stable_id="xml:threshold:new" title="Threshold" start="22" end="44" status="active" effective_from="2025-01-01">
+    <path><segment>Thresholds</segment><segment>Current</segment></path>
+    <relationships>
+      <relationship type="supersedes" target="xml:threshold:old"/>
+    </relationships>
+  </record>
+</source>

@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "Café and Café are distinct. Signal: ⚓ — proceed.",
+  "records": [
+    {
+      "effective_from": null,
+      "effective_to": null,
+      "exact_text": "Café and Café are distinct. Signal: ⚓ — proceed.",
+      "hierarchy_path": [
+        "Notices",
+        "Unicode"
+      ],
+      "stable_id": "notice:unicode:1",
+      "text_end": 49,
+      "text_start": 0,
+      "title": "Café signal"
+    }
+  ]
+}

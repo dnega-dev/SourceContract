@@ -1,0 +1,40 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-tombstone"
+  },
+  "description": "An intentionally empty text span records an official deletion without silently dropping identity.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "exact_text": "",
+        "hierarchy_path": [
+          "Code",
+          "Repealed",
+          "Provision 9"
+        ],
+        "relationships": [
+          {
+            "target": "provision:9",
+            "type": "replaces"
+          }
+        ],
+        "stable_id": "provision:9:tombstone",
+        "status": "tombstone",
+        "title": "Provision 9 repealed"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-tombstone",
+  "payload": "data/json-tombstone.json",
+  "tags": [
+    "tombstone",
+    "deletion",
+    "identity"
+  ],
+  "title": "Deletion represented as a tombstone"
+}

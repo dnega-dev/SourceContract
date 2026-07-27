@@ -1,0 +1,57 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-supersession"
+  },
+  "description": "XML records carry explicit old-to-new lifecycle edges and closed dates.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": "2021-01-01",
+        "effective_to": "2024-12-31",
+        "exact_text": "Former threshold: 10.",
+        "hierarchy_path": [
+          "Thresholds",
+          "Former"
+        ],
+        "relationships": [
+          {
+            "target": "xml:threshold:new",
+            "type": "superseded_by"
+          }
+        ],
+        "stable_id": "xml:threshold:old",
+        "status": "superseded",
+        "title": "Threshold"
+      },
+      {
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "exact_text": "Current threshold: 20.",
+        "hierarchy_path": [
+          "Thresholds",
+          "Current"
+        ],
+        "relationships": [
+          {
+            "target": "xml:threshold:old",
+            "type": "supersedes"
+          }
+        ],
+        "stable_id": "xml:threshold:new",
+        "status": "active",
+        "title": "Threshold"
+      }
+    ]
+  },
+  "family": "xml",
+  "id": "xml-supersession",
+  "payload": "data/xml-supersession.xml",
+  "tags": [
+    "xml",
+    "supersession",
+    "temporal"
+  ],
+  "title": "XML supersession chain"
+}

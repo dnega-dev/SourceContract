@@ -1,0 +1,19 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-empty"
+  },
+  "description": "A complete official response may legitimately contain no in-scope records.",
+  "expect": {
+    "records": []
+  },
+  "family": "json",
+  "id": "json-empty",
+  "payload": "data/json-empty.json",
+  "tags": [
+    "empty-result",
+    "completeness"
+  ],
+  "title": "Complete source with no records"
+}

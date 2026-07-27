@@ -1,0 +1,6 @@
+<source complete="true" contract_version="1.0">
+  <document>Rule A requires notice.</document>
+  <record stable_id="xml:rule:a" title="Rule A" start="0" end="23" status="active" effective_from="2023-01-01">
+    <path><segment>XML Code</segment><segment>Rule A</segment></path>
+  </record>
+</source>

@@ -1,0 +1,55 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-unicode-hierarchy"
+  },
+  "description": "Entity decoding and Unicode text coexist with a parent-child hierarchy.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Part Ω & General",
+        "hierarchy_path": [
+          "XML Code",
+          "Part Ω"
+        ],
+        "relationships": [],
+        "stable_id": "xml:part:omega",
+        "status": "active",
+        "title": "Part Ω"
+      },
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Clause β says “safe & sound”.",
+        "hierarchy_path": [
+          "XML Code",
+          "Part Ω",
+          "Clause β"
+        ],
+        "relationships": [
+          {
+            "detail": "structural parent",
+            "target": "xml:part:omega",
+            "type": "parent"
+          }
+        ],
+        "stable_id": "xml:clause:beta",
+        "status": "active",
+        "title": "Clause β"
+      }
+    ]
+  },
+  "family": "xml",
+  "id": "xml-unicode-hierarchy",
+  "payload": "data/xml-unicode-hierarchy.xml",
+  "tags": [
+    "xml",
+    "unicode",
+    "entities",
+    "hierarchy"
+  ],
+  "title": "XML entities, Unicode, and hierarchy"
+}

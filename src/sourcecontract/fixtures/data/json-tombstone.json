@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "Provision 9 was repealed.",
+  "records": [
+    {
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "exact_text": "",
+      "hierarchy_path": [
+        "Code",
+        "Repealed",
+        "Provision 9"
+      ],
+      "relationships": [
+        {
+          "target": "provision:9",
+          "type": "replaces"
+        }
+      ],
+      "stable_id": "provision:9:tombstone",
+      "status": "tombstone",
+      "text_end": 0,
+      "text_start": 0,
+      "title": "Provision 9 repealed"
+    }
+  ]
+}

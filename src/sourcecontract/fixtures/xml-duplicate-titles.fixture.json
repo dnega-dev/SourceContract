@@ -1,0 +1,47 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-duplicate-titles"
+  },
+  "description": "Two identically titled XML records retain separate source identities.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Schedule Entry north.",
+        "hierarchy_path": [
+          "Schedules",
+          "North"
+        ],
+        "relationships": [],
+        "stable_id": "xml:schedule:north",
+        "status": "active",
+        "title": "Schedule Entry"
+      },
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Schedule Entry south.",
+        "hierarchy_path": [
+          "Schedules",
+          "South"
+        ],
+        "relationships": [],
+        "stable_id": "xml:schedule:south",
+        "status": "active",
+        "title": "Schedule Entry"
+      }
+    ]
+  },
+  "family": "xml",
+  "id": "xml-duplicate-titles",
+  "payload": "data/xml-duplicate-titles.xml",
+  "tags": [
+    "xml",
+    "identity",
+    "duplicates"
+  ],
+  "title": "XML duplicate labels remain distinct"
+}

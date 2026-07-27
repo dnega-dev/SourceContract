@@ -1,0 +1,47 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-duplicate-titles"
+  },
+  "description": "Repeated display labels must not collapse records that have distinct official identifiers.",
+  "expect": {
+    "records": [
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Article 5 Alpha duty.",
+        "hierarchy_path": [
+          "Act A",
+          "Article 5"
+        ],
+        "relationships": [],
+        "stable_id": "act:a:5",
+        "status": "active",
+        "title": "Article 5"
+      },
+      {
+        "effective_from": null,
+        "effective_to": null,
+        "exact_text": "Article 5 Beta duty.",
+        "hierarchy_path": [
+          "Act B",
+          "Article 5"
+        ],
+        "relationships": [],
+        "stable_id": "act:b:5",
+        "status": "active",
+        "title": "Article 5"
+      }
+    ]
+  },
+  "family": "json",
+  "id": "json-duplicate-titles",
+  "payload": "data/json-duplicate-titles.json",
+  "tags": [
+    "identity",
+    "duplicates",
+    "titles"
+  ],
+  "title": "Duplicate titles with distinct identities"
+}

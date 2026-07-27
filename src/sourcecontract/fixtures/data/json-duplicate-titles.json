@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "contract_version": "1.0",
+  "document_text": "Article 5 Alpha duty.\nArticle 5 Beta duty.",
+  "records": [
+    {
+      "effective_from": null,
+      "effective_to": null,
+      "exact_text": "Article 5 Alpha duty.",
+      "hierarchy_path": [
+        "Act A",
+        "Article 5"
+      ],
+      "stable_id": "act:a:5",
+      "text_end": 21,
+      "text_start": 0,
+      "title": "Article 5"
+    },
+    {
+      "effective_from": null,
+      "effective_to": null,
+      "exact_text": "Article 5 Beta duty.",
+      "hierarchy_path": [
+        "Act B",
+        "Article 5"
+      ],
+      "stable_id": "act:b:5",
+      "text_end": 42,
+      "text_start": 22,
+      "title": "Article 5"
+    }
+  ]
+}

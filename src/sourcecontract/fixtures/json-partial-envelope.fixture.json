@@ -1,0 +1,19 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/json-partial-envelope"
+  },
+  "description": "The payload explicitly says it is incomplete and must be rejected rather than partially emitted.",
+  "expect": {
+    "error": "PARTIAL_FETCH"
+  },
+  "family": "json",
+  "id": "json-partial-envelope",
+  "payload": "data/json-partial-envelope.json",
+  "tags": [
+    "partial-fetch",
+    "truncation"
+  ],
+  "title": "Envelope-declared truncation"
+}

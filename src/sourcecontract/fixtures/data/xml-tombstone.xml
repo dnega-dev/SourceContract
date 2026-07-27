@@ -1,0 +1,9 @@
+<source complete="true" contract_version="1.0">
+  <document>Rule X deleted.</document>
+  <record stable_id="xml:rule:x:deleted" title="Rule X deleted" start="0" end="0" status="tombstone" effective_from="2025-01-01">
+    <path><segment>XML Code</segment><segment>Deleted</segment><segment>Rule X</segment></path>
+    <relationships>
+      <relationship type="supersedes" target="xml:rule:x"/>
+    </relationships>
+  </record>
+</source>

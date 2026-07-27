@@ -1,0 +1,20 @@
+{
+  "context": {
+    "complete": true,
+    "retrieved_at": "2025-01-15T12:30:00Z",
+    "source_url": "https://official.example.test/sources/xml-empty"
+  },
+  "description": "A complete XML source can produce an empty canonical result.",
+  "expect": {
+    "records": []
+  },
+  "family": "xml",
+  "id": "xml-empty",
+  "payload": "data/xml-empty.xml",
+  "tags": [
+    "xml",
+    "empty-result",
+    "completeness"
+  ],
+  "title": "Complete XML source with no records"
+}
