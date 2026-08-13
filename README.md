@@ -1,5 +1,9 @@
 # SourceContract
 
+[![CI](https://github.com/dnega-dev/SourceContract/actions/workflows/ci.yml/badge.svg)](https://github.com/dnega-dev/SourceContract/actions/workflows/ci.yml)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)](https://www.python.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 SourceContract is a zero-runtime-dependency Python 3.9+ CLI and library for testing official-source ingestion adapters. It runs adapters against versioned, deterministic, adversarial fixtures and reports violations of a canonical source-record contract.
 
 The project validates adapter behavior; it does not fetch remote sources, choose an authority, or certify the legal accuracy of source content.
