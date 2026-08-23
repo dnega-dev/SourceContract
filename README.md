@@ -1,5 +1,9 @@
 # SourceContract
 
+[![CI](https://github.com/dnega-dev/SourceContract/actions/workflows/ci.yml/badge.svg)](https://github.com/dnega-dev/SourceContract/actions/workflows/ci.yml)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)](https://www.python.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 SourceContract is a zero-runtime-dependency Python 3.9+ CLI and library for testing official-source ingestion adapters. It runs adapters against versioned, deterministic, adversarial fixtures and reports violations of a canonical source-record contract.
 
 The project validates adapter behavior; it does not fetch remote sources, choose an authority, or certify the legal accuracy of source content.
@@ -194,6 +198,23 @@ python3 -m compileall -q src tests
 ```
 
 `ci/check.sh` runs both required checks plus smoke validations of the two reference adapters. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [docs/architecture.md](docs/architecture.md).
+
+## Assurance toolkit
+
+This repository is part of a set of small, deterministic tools for testing AI-agent and retrieval-system failure boundaries:
+
+- [SourceAdapter-Fuzz](https://github.com/dnega-dev/SourceAdapter-Fuzz) — fault injection for public-data acquisition strategies.
+- [SourceContract](https://github.com/dnega-dev/SourceContract) — conformance testing for official-source ingestion adapters.
+- [ClaimSpec](https://github.com/dnega-dev/ClaimSpec) — executable grounding contracts for research-agent traces.
+- [CitationChaos](https://github.com/dnega-dev/CitationChaos) — citation mutation testing for grounded-answer pipelines.
+- [AsOfGuard](https://github.com/dnega-dev/AsOfGuard) — temporal-contamination detection for RAG and agent memory.
+- [Legal-MCP-Assurance](https://github.com/dnega-dev/Legal-MCP-Assurance) — black-box assurance for legal and retrieval tool servers.
+- [JurisdictionLeakBench](https://github.com/dnega-dev/JurisdictionLeakBench) — retrieval-scope isolation security benchmark.
+- [MemoryLitmus](https://github.com/dnega-dev/MemoryLitmus) — conformance testing for agent-memory semantics.
+- [FailureKata](https://github.com/dnega-dev/FailureKata) — executable practice from coding-agent transcript failures.
+- [FieldQuarantine](https://github.com/dnega-dev/FieldQuarantine) — safe migration of offline submissions across schema changes.
+
+Each project is independently installable and reports deterministic outcomes suitable for local development and CI.
 
 ## License
 
